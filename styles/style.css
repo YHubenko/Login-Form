@@ -1,0 +1,150 @@
+body {
+    background: url("../images/BACKGROUND.png") center no-repeat;
+    background-size: 100%;
+    height: 93vh;
+}
+
+.reg-wrapper,
+.login-wrapper {
+    width: 474px;
+    height: 610.5px;
+    margin: 30px auto;
+    background-color: #2F1A41;
+    border-radius: 33px;
+    transition: 0.5s;
+    box-shadow: -20px 20px rgba(126, 171, 200, 0.89);
+}
+.login-wrapper {
+    height: 550.5px;
+}
+#header {
+    width: 474px;
+    height: 304.5px;
+    background: url("../images/Header-bg.png") center no-repeat;
+    background-size: 100%;
+}
+.reg-form-div,
+.login-form-div {
+    width: 414px;
+    height: 363px;
+    background: url("../images/FROM-HOLDER-BG.png") bottom no-repeat;
+    background-size: 100%;
+    background-color: #fff;
+    top: 217.5px;
+    border-radius: 21px 21px 33px 33px;
+    padding: 30px;
+    transition: 0.5s;
+    position: absolute;
+}
+.login-form-div {
+    height: 303px;
+}
+form {
+    width: 100%;
+    height: 100%;
+}
+
+.submit-button {
+    background-color: #E63B3B;
+    box-shadow: 3px 6px #CA192A;
+    border-radius: 30px;
+    border: none;
+    width: 202.5px;
+    height: 52.5px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 34.5px;
+    position: absolute;
+    top: 270px;
+    left: 135px;
+    transition: 0.5s;
+}
+
+.registration-input,
+.login-input {
+    font-family: 'Open Sans', sans-serif;
+    color: #ababab;
+    font-size: 18px;
+    height: 45px;
+    width: 183px;
+    margin: 7.5px;
+    border: none;
+    letter-spacing: 0.75px;
+    background: url("../images/RegisterUnderline.png") no-repeat;
+    background-position-y: 37.5px;
+    outline: none;
+    transition: 0.5s;
+    position: relative;
+}
+.registration-input::-webkit-input-placeholder,
+.login-input::-webkit-input-placeholder {
+    color: #cccbcb;
+    transition: 0.5s;
+}
+.registration-input::-moz-placeholder,
+.login-input::-moz-placeholder {
+    color: #cccbcb;
+    transition: 0.5s;
+}
+.login-input {
+    width: 381px;
+    background: url("../images/LoginUnderline.png") no-repeat;
+    background-position-y: 37.5px;
+    top: -248px;
+}
+.hidden {
+    opacity: 1;
+    animation: hideInputs 0.5s forwards;
+    z-index: 0;
+}
+.shown {
+    opacity: 0;
+    animation: showInputs 0.5s forwards;
+    z-index: 1;
+}
+@keyframes hideInputs {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes showInputs {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.hidden-on-load {
+    visibility: hidden;
+}
+
+.switch-form {
+    background: none;
+    color: #ababab;
+    font-style: italic;
+    border: none;
+    font-size: 15px;
+    width: 195px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    top: 200px;
+    left: 135px;
+}
+.switch-form:hover {
+    color: #868686;
+}
+
+.switch-form-registration {
+    width: 105px;
+}
+
+input[type = number]::-webkit-outer-spin-button,
+input[type = number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.registration-input:focus::-webkit-input-placeholder,
+.login-input:focus::-webkit-input-placeholder {
+    transition: 0.5s;
+    font-size: 12px;
+    position: relative;
+    transform: translate(0, -5px);
+}
