@@ -13,24 +13,25 @@
     <div id="header"></div>
     <div id="form-container" class="login-form-div">
         <form id="register-form">
-            <input type="text" name="first-name" class="registration-input hidden hidden-on-load" placeholder="First Name">
-            <input type="text" name="last-name" class="registration-input hidden hidden-on-load" placeholder="Last Name">
+            <input type="text" name="firsNameReg" class="registration-input hidden hidden-on-load" placeholder="First Name">
+            <input type="text" name="lasNameReg" class="registration-input hidden hidden-on-load" placeholder="Last Name">
 
-            <input type="text" name="username" class="registration-input hidden hidden-on-load" placeholder="User Name">
-            <input type="email" name="email" class="registration-input hidden hidden-on-load" placeholder="Email">
+            <input type="text" name="usernameReg" class="registration-input hidden hidden-on-load" placeholder="User Name">
+            <input type="email" name="emailReg" class="registration-input hidden hidden-on-load" placeholder="Email">
 
-            <input type="password" name="password" class="registration-input hidden hidden-on-load" placeholder="Password">
-            <input type="password" name="confirm-password" class="registration-input hidden hidden-on-load" placeholder="Confirm Password">
+            <input type="password" name="passwordReg" class="registration-input hidden hidden-on-load" placeholder="Password" minlength="6" maxlength="16">
+            <input type="password" name="confirmPasswordReg" class="registration-input hidden hidden-on-load" placeholder="Confirm Password">
 
-            <input type="number" name="phone-number" class="registration-input hidden hidden-on-load" placeholder="Phone Number">
+            <input type="number" name="phoneNumberReg" class="registration-input hidden hidden-on-load" placeholder="Phone Number">
 
 
 
-            <input type="text" name="username" class="login-input" placeholder="User Name">
-            <input type="password" name="password" class="login-input" placeholder="Password">
+            <input type="text" name="username" class="login-input" placeholder="User Name" required>
+            <input type="password" name="password" class="login-input" placeholder="Password" required>
+            <input type="text" name="loginOutput" class="login-input login-output" readonly>
 
             <input type="button" name="go-to-register" class="switch-form" value="Not registered yet? Sign Up">
-            <input type="button" value="Submit" name="submit-button" class="submit-button">
+            <input type="submit" value="Submit" name="submit-button" class="submit-button">
         </form>
     </div>
 </div>
