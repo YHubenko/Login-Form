@@ -93,15 +93,28 @@ form {
     background-position-y: 37.5px;
     top: -248px;
 }
+.login-output {
+    background: none;
+    top: -265px;
+}
+.login-output:hover {
+    cursor: unset;
+}
 .hidden {
     opacity: 1;
     animation: hideInputs 0.5s forwards;
     z-index: 0;
 }
+.hidden:hover {
+    cursor: unset;
+}
 .shown {
     opacity: 0;
     animation: showInputs 0.5s forwards;
     z-index: 1;
+}
+.shown:hover {
+    cursor: text;
 }
 @keyframes hideInputs {
     0% {opacity: 1;}
